@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Summary</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Student Marks</h1>
+        <div class="data">
+            <div class="display">
+                <table id="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Marks</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="add">
+                <h3>Add Marks</h3>
+                <div class="input">
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <input type="text" id="Marks" placeholder="Enter Marks">
+                    <button id="post">Add</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit Student</h2>
+            <label for="editName">New Name:</label>
+            <input type="text" id="editName">
+            <label for="editMarks">New Marks:</label>
+            <input type="text" id="editMarks">
+            <button onclick="updateStudent()">Update Student</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
